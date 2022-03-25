@@ -1,6 +1,6 @@
 function transmite() {
-    let text = document.getElementById("intrebare").value;
-    window.open("mailto:ecaterina.besliu1979@gmail.com?subject=Intrebare&body=" + text);
+    let text = document.getElementById("mesaj").value;
+    window.open("mailto:avecom-net@mail.ru?subject=Mesaj&body=" + text);
 }
 
 function mobileMenu() {

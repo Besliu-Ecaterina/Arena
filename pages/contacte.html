@@ -2,98 +2,117 @@
 <html>
 
 <head>
-    <title>Liceul Teoretic Ștefănești</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Liceul Teoretic Ștefănești este o instituţie şcolară, orientată spre calitatea în educație, caracterizată de seriozitatea, calificarea şi competința atât a cadrelor didactice, cât şi a elevilor, prin formarea continuă a cadrelor didactice, prin crearea unui climat de muncă stimulativ, precum şi prin asigurarea unei bune comunicări strategice interinstituționale." />
-    <meta name="keywords" content="LT Stefanesti, liceul stefanesti, Liceu Stefanesti, lt Stefanesti, Liceu, Stefanesti, Teoretic, studii, Stefanesti, Moldova " />
-    <meta name="author" content="Ion Balan" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../images/icon.png" />
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
 
+    <link rel="icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/main.js" defer></script>
+
+    <title>S.C. AVECOM-NET S.R.L.</title>
 </head>
 
 <body>
-    <section class="sub-header">
-        <nav>
-            <a href="../index.html"><img src="../images/logo.png"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="../index.html">PAGINA PRINCIPALĂ</a></li>
-                    <li><a href="despre_noi.html">DESPRE NOI</a></li>
-                    <li><a href="galerie.html">GALERIE</a></li>
-                    <li><a href="orar.html">ORAR</a></li>
-                    <li><a href="noutati.html">NOUTĂȚI</a></li>
-                    <li><a href="acte.html">ACTE NORMATIVE</a></li>
-                    <li><a href="contacte.html">CONTACTE</a></li>
+
+    <header>
+        <a class="logo" href="despre.html">
+            <img src="../images/logo.png">
+        </a>
+        <div id="navbar" class="nav">
+            <a href="../index.html">
+                Home
+                <i class="fas fa-home"></i>
+            </a>
+
+            <a href="despre.html">
+                About Us
+                <i class="fas fa-info-circle"></i>
+            </a>
+            <a href="servicii.html">
+                Services
+                <i class="fab fa-usps"></i>
+            </a>
+            <a href="galerie.html">
+                Gallery
+                <i class="fas fa-images"></i>
+            </a>
+            <a class="active" href="contacte.html">
+                Contact Us
+                <i class="fas fa-phone-alt"></i>
+            </a>
+            <a id="hamburger-menu" onclick="mobileMenu()"><i class="fa fa-bars"></i></a>
+        </div>
+    </header>
+
+    <section class="top-section" id="contacte">
+        <h1 class="top-title">Contact Us</h1>
+    </section>
+
+    <main>
+        <div class="row lista">
+            <div class="col-50">
+                <h3 class="centered">Programul de lucru:</h3>
+                <ul class="contact-list">
+                    <li><b>Luni:</b> 8:00-18:00</li>
+                    <li><b>Marți:</b> 8:00-18:00</li>
+                    <li><b>Miercuri:</b> 8:00-18:00</li>
+                    <li><b>Joi:</b> 8:00-18:00</li>
+                    <li><b>Vineri:</b> 8:00-18:00</li>
+                    <li><b>Sâmbătă:</b> 8:00-16:00</li>
+                    <li><b>Duminică:</b> 8:00-15:00</li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="ShowMenu()"></i>
-        </nav>
-        <h1>Contactează-ne</h1>
-    </section>
-    <!--------- contacte --------->
-    <section class="location">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2683.437624359217!2d28.43790881515778!3d47.73416308715115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cc7fc046874bd3%3A0x4e01cd907d5877da!2zTGljZXVsIFRlb3JldGljIMWedGVmxINuZcWfdGk!5e0!3m2!1sro!2s!4v1625928394448!5m2!1sro!2s"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
-    </section>
-    <section class="contact-us">
-        <div class="row">
-            <div class="contact-col">
-                <div>
-                    <i class="fa fa-home"></i>
-                    <span>
-                        <h5>str. Ion Codreanu 20</h5>
-                        <p>
-                            s. Ștefănești, r-nul Florești
-                        </p>
-                    </span>
-                </div>
-                <div>
-                    <i class="fa fa-phone"></i>
-                    <span>
-                        <h5>+373(250)49-2-28</h5>
-                        <p>
-                            Luni-Vineri, 08:00-17:00
-                        </p>
-                    </span>
-                </div>
-                <div>
-                    <i class="fa fa-envelope-o"></i>
-                    <span>
-                        <h5>lts-info@gmail.com</h5>
-                        <p>
-                            Adresa de e-mail
-                        </p>
-                    </span>
-                </div>
-            </div>
-            <div class="contact-col">
-                <form id="formular">
-                    <input type="text" id="nume" placeholder="Nume" required>
-                    <input type="email" id="email" placeholder="E-mail" required>
-                    <textarea rows="8" id="mesaj" placeholder="Mesaj" required></textarea>
-                    <input onclick="send()" type="button" id="transmite" value="Transmite" class="hero-btn red-btn">
-                </form>
+
+            <div class="col-50">
+                <h3 class="centered">Date de contact:</h3>
+                <ul class="contact-list">
+                    <li><b>Adresa:</b> Strada Decebal 16, Ungheni</li>
+                    <li><b>Telefon:</b> /0236/ 2 88 99</li>
+                    <li><b>Fax:</b> /0236/ 2 23 388</li>
+                    <li><b>E-mail:</b> avecom-net@mail.ru</li>
+                </ul>
             </div>
         </div>
-    </section>
-    <!------- subsol ------->
-    <section class="footer">
-        <h4>Urmarește-ne</h4>
-        <div class="icons">
-            <a target="_blank" href="https://www.facebook.com/liceulteoreticstefanesti"><i class="fa fa-facebook"></i></a>
+
+        <div class="row lista">
+            <div class="col-50">
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10841.156894269547!2d27.7995591!3d47.2109229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8639d4946290681e!2sArena!5e0!3m2!1sro!2s!4v1647360874010!5m2!1sro!2s"
+                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="col-50">
+                <div class="contact-form">
+                    <form method="post" id="mesaj">
+                        <h3 class="centered">Lasă un mesaj</h3>
+                        <input type="text" placeholder="Nume" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea rows="3" placeholder="Mesaj" required></textarea>
+                        <input onclick="transmite()" type="submit" value="Transmite">
+                    </form>
+                </div>
+            </div>
         </div>
-        <p>
-            &copy; Toate drepturile sunt rezervate
-        </p>
-    </section>
-    <!--------JavaScript pentru meniu------->
-    <script src="../js/script.js"></script>
+    </main>
+
+    <footer>
+        <img class="logo_footer" src="../images/logo3.png">
+        <h5 class="telefon_footer">Telefon/fax: /0236/ 2 88 99, 2 23 388</h5>
+        <h5 class="email_footer">avecom-net@mail.ru</h5>
+        <div>
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100077343601819">
+                <img class="facebook" src="../images/facebook_icon.png">
+            </a>
+        </div>
+        <h6 class="rights_main">Acest website a fost realizat în cadrul competiției ”Tekwill Junior Ambassadors”
+            organizată de proiectul ”Tekwill în Fiecare Școală” și nu reflectă neapărat opinia proiectului.</h6>
+    </footer>
 
 </body>
 
