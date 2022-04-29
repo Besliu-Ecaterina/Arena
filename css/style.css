@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
 
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -19,7 +19,12 @@ body {
     font-family: "Open Sans";
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Roboto";
 }
 
@@ -60,7 +65,13 @@ p {
     z-index: 2;
 }
 
-#top1, #top2, #top3, #top4, #top5, #top6, #top7 {
+#top1,
+#top2,
+#top3,
+#top4,
+#top5,
+#top6,
+#top7 {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -86,7 +97,7 @@ p {
     transition-duration: 0.5s;
     border: 10px solid 0;
     background-color: rgba(48, 64, 151, 0.705);
-    transition-duration: 0,3s;
+    transition-duration: 0, 3s;
     text-decoration: none;
 }
 
@@ -134,54 +145,67 @@ main {
     text-align: center !important;
 }
 
-footer {
-    position: absolute;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    min-height: 300px;
-    padding: 5px 0;
+.main-footer {
     background: #363636;
     color: white;
-    height: 3.5rem;   
+    padding: 30px 30px 5px 30px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.first-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.footer-phone {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.footer-social {
+    width: 380px;
+}
+
+.logo-footer {
+    text-align: center;
+    width: 380px;
+    height: 210px;
+    margin: -40px auto;
 }
 
 .facebook {
-    position: absolute;
-    top: 180px;
-    height: 80px;
     width: 80px;
-}
-
-.logo_footer {
-    position: absolute;
     text-align: center;
-    left: 620px;
-    width: 380px;
-    height: 210px;
+    display: block;
+    margin: 0 auto;
 }
 
-.telefon_footer{
+.email-footer {
     font-size: 22px;
-    position: absolute;
-    left: 110px;
-    top: 135px;
+    font-weight: normal;
 }
 
-.email_footer{
-    position: absolute;
-    left: 1200px;
-    top: 135px;
-    font-size: 22px;
+.second-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.rights_main{
-    position: absolute;
-    bottom: 30px;
-    right: 270px;
-    top: 270px;
-    font-size: small;
-    color: #a8a8a8;
+.rights_main {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.anul {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 5px;
 }
 
 .header {
@@ -301,15 +325,15 @@ footer {
 .parteneri {
     display: flex;
     flex-wrap: wrap;
-    
+
     align-items: center;
     justify-content: space-evenly;
 }
 
 .parteneri img {
     transition: all 0.3s;
-    margin-left:25px;
-    margin-top:40px;
+    margin-left: 25px;
+    margin-top: 40px;
 }
 
 .parteneri img:hover {
@@ -329,11 +353,11 @@ footer {
 }
 
 .serv h3 {
-   color: black;
-   margin-bottom: 15px;
-   font-weight: bold;
-   text-shadow: 5px 3px 20px gray;
-   font-size: 30px;
+    color: black;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-shadow: 5px 3px 20px gray;
+    font-size: 30px;
 }
 
 .serv img {
@@ -350,7 +374,7 @@ li a {
     position: relative;
     width: 50%;
     border: 5px solid #ff533d;
-    background-color:#ffffff;
+    background-color: #ffffff;
     text-align: center;
     left: 25%;
 }
@@ -360,7 +384,7 @@ li a {
     padding: 3px;
 }
 
-.tabel-serv th{
+.tabel-serv th {
     border: 3px solid lightgray;
     padding: 5px;
     font-size: 1.2rem;
@@ -369,7 +393,7 @@ li a {
 #magazinul-imagini {
     width: 100%;
     background: linear-gradient(#ffffff3a, #ffffff56), url(https://wallpaperaccess.com/full/318166.jpg);
-    background-position: 0% 60%; 
+    background-position: 0% 60%;
     background-size: cover;
 }
 
@@ -390,7 +414,7 @@ li a {
 
 .galerie img:hover {
     transform: scale(1.2) skew(-1deg);
-    filter: brightness(140%) drop-shadow(7px 5px 1px  #6E6658);
+    filter: brightness(140%) drop-shadow(7px 5px 1px #6E6658);
     transition: 1s all;
 }
 
@@ -430,7 +454,8 @@ li a {
     padding: 5px 15px 30px 15px;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     display: block;
     width: 90%;
     margin: 15px auto 0px auto;
@@ -444,7 +469,7 @@ li a {
     color: rgb(255, 255, 255);
     position: absolute;
     text-decoration: none;
-    font-size:35px;
+    font-size: 35px;
     top: 135px;
     left: 80px;
 }
@@ -504,53 +529,59 @@ li a {
         font-size: 20px;
     }
 
-    footer {
-        min-height: 280px;
-        height: 1.5rem;   
-    }
-
     .logo {
         margin-top: -15px;
         width: 60px;
     }
 
-    .logo_footer {
-        position: absolute;
-        top: 85px;
-        left: 90px;
-        width: 180px;
-        height: 100px;
-    }
-    
-    .telefon_footer{
-        font-size: 14px;
-        position: absolute;
-        left: 70px;
-        top: 75px;
+    .first-container {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .email_footer{
-        position: absolute;
-        left: 120px;
-        top: 190px;
-        font-size: 14px;
+    .footer-phone {
+        font-size: 15px;
     }
 
-    .rights_main{
-        position: absolute;
-        bottom: 5px;
-        left: 10px;
-        right: 10px;
-        top: 230px;
-        font-size: 12px;
-        color: #a8a8a8;
+    .footer-social {
+        width: 350px;
+    }
+
+    .logo-footer {
+        width: 350px;
+        height: 180px;
+        margin: -40px auto;
     }
 
     .facebook {
-        left: 160px;
-        top: 5px;
-        height: 60px;
         width: 60px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .email-footer {
+        font-size: 17px;
+    }
+
+    .second-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rights_main {
+        font-size: 18px;
+        color: white;
+        margin-bottom: 0px;
+    }
+
+    .anul {
+        font-size: 18px;
+        color: white;
+        margin-bottom: 5px;
     }
 
     .text-box {
@@ -570,14 +601,18 @@ li a {
     }
 
     .serv img {
-       height: 120px;
+        height: 120px;
+    }
+
+    .serv .logosart {
+        height: 100px;
     }
 
     .up {
         position: fixed;
         height: 50px !important;
         bottom: 50px;
-        right: -4px;
+        right: 0px;
         z-index: 2;
     }
 
